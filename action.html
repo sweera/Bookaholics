@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Bookaholics::Action & Adventure</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+        <link href="fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body onload="action_description(); addtocart(); calc_bill();">
+         <header>
+            <div class="logo">
+                <h1><a href="index.html">Bookaholics</a></h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="images/underconstraction.jpg"><i class="fas fa-shopping-cart"></i>Cart</a></li>
+                    <li><a href="images/underconstraction.jpg"><i class="fas fa-file-signature"></i>Orders</a></li>
+                    <li><a href="images/underconstraction.jpg"><i class="fas fa-user"></i>Profile</a></li>
+                    <li><a href="contact.html"><i class="far fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="genres1">
+                <h2>Action and Adventure</h2>
+            </div>
+            <button id="totalbill">Total Bill</button>
+            <p id="charges"></p>
+            <div class="action">
+                <div id="lord">
+                    <h3 id="lordesc">The Lord of the Rings</h3>
+                    <img src="images/13.jpg" id="lordimg">
+                    
+<!--                    https://lh3.googleusercontent.com/-qGma-1dNOdIlMK6H788Fv3tUct7HSM24bQyjcVNfhwHx5Lo_EJf3PYDHNfEmb3vFtKf7Ec=s85-->
+                    <p id="bill1">
+                        <b>Paperback(available in:): CDN$ 65, 63, and 68</b><br>
+                        <label>Enter the price you want</label>
+                        <input type="text" id="price1">
+                    </p>
+                    <button id="cost1">Add to Cart</button>
+                    
+                </div>
+                <div id="hp">
+                    <h3 id="hpdesc">Harry Potter</h3>
+                    <img src="images/14.jpg" id="hpimg">
+<!--                    https://lh3.googleusercontent.com/2Akxypfxxp_6igiNHHH3lvG9YIgbZp5qQzbkXmuFMqqxhaV91uaAqupOlplDA34UoZu0=s85-->
+                    <p id="bill2">
+                        <b>Hardcover(available in:): CDN$ 75, 73, and 73.5</b><br>
+                        <label>Enter the price you want</label>
+                        <input type="text" id="price2">
+                    </p>
+                    <button id="cost2">Add to Cart</button>
+                </div>
+                <div id="western">
+                    <h3 id="westerndesc">Annals of the Western Shore</h3>
+                    <img src="images/16.jpg" id="westernimg">
+<!--                    https://lh3.googleusercontent.com/CFArkupnLvN8-WS_LBxJ8BfxmQX2id5mEQTRsEyZIYzcK5yOGRPLM3nroer3wiY9Tp_t4w=s102-->
+                    <p id="bill3">
+                        <b>Hardcover(available in:): CDN$ 55, 53, and 57</b><br>
+                        <label>Enter the price you want</label>
+                        <input type="text" id="price3">
+                    </p>
+                    <button id="cost3">Add to Cart</button>
+                </div>
+                <div id="tom">
+                    <h3 id="tomdesc">The History of Tom Jones</h3>
+                    <img src="images/17.jpg" id="tomimg">
+<!--                    https://lh3.googleusercontent.com/FI7Ioht7flHlcS1KTuTLLdBvNuHrZeoQup6tYVNkOrcIg4xNjqI3lX-BjOtum7hDJxnhyD8=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;50</b>
+                    </p>
+                    <a href="images/underconstraction.jpg"><button class="cart">Add to Cart</button></a>
+                </div>
+                <div id="atlantis">
+                    <h3 id="atlantisdesc">Atlantis Lost</h3>
+                    <img src="images/18.png" id="atlantisimg">
+<!--                    https://lh3.googleusercontent.com/AiqBnmkacy3GbrCpHCwXnlNUsfM6g7Zlm6Go4suASy4_L8iubwPbquitIv0Me4w3rcKJ=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;20</b>
+                    </p>
+                    <button>Add to Cart</button>
+                </div>
+                <div id="sub">
+                    <h3 id="subdesc">Subterranean</h3>
+                    <img src="images/19.jpg" id="subimg">
+<!--                    https://lh3.googleusercontent.com/lX2B0bmG6HsXphRuXxV2DEnlZOAo02GmZDvrHeIsyvSbWlkLMBgN_DBAfUNk7ncZyOXADB4=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;48</b>
+                    </p>
+                    <a href="images/underconstraction.jpg"><button class="cart">Add to Cart</button></a>
+                </div>
+                <div id="yuki">
+                    <h3 id="yukidesc">Daikaiju Yuki</h3>
+                    <img src="images/22.jpg" id="yukimg">
+<!--                    https://lh3.googleusercontent.com/kCEZf_vVpnMRsKBUlOWDD6sUe5JAu7ugeGAzLQQ1am3t3PRsDTbbD5IUp9t8fzuF6FcaHGE=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;40</b>
+                    </p>
+                    <button class="cart">Add to Cart</button>
+                </div>
+                <div id="code">
+                    <h3 id="codedesc">The Da Vinci Code</h3>
+                    <img src="images/21.jpg" id="codeimg">
+<!--                    https://lh3.googleusercontent.com/6dDHQ6yLjHF7iwEbxDNhvuL_ALQ_PZaUQE8_AQo09Qzl64Bs_53p7eje1zZ2BCiZ5g4P=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;70</b>
+                    </p>
+                    <a href="images/underconstraction.jpg"><button class="cart">Add to Cart</button></a>
+                </div>
+                <div id="hunger">
+                    <h3 id="hungerdesc">The Hunger Games</h3>
+                    <img src="images/20.jpg" id="hungerimg">
+<!--                    https://lh3.googleusercontent.com/clIZbOxjTcu-_K1nrGrO9SfHVdRND9gic6f7l0AaGoDRHSnuvDeGy08cedpbZyApr2HZFBU=s85-->
+                    <p>
+                        <b>Paperback: CDN$ &nbsp;65</b>
+                    </p>
+                    <a href="images/underconstraction.jpg"><button class="cart">Add to Cart</button></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <i>Copyright &copy;2019 Bookaholics.</i><br>
+            <i><a href="mailto:sweerachahal95@gmail.com">sweerachahal95@gmail.com</a></i>
+        </footer>
+    </body>
+</html>

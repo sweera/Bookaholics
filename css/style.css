@@ -1,0 +1,84 @@
+header
+{
+/*    width: 100%;   */
+    background-image: linear-gradient(#FFFFFF,#7e6c8c);
+}
+.logo 
+{
+    margin: 0px;
+    padding: 0px;
+    width: 40%;
+    display: inline;
+}
+.logo h1 
+{
+    font-family: monospace;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    display: inline;
+}
+.logo h1 a
+{
+    text-decoration: none;
+    color: black;
+}
+.logo a:hover
+{
+    color:purple;
+}
+.navigation
+{
+    float: right;
+    width: 60%;
+    clear: left;
+    margin: 0px;
+    padding: 0px;
+     
+}
+.navigation ul
+{
+    list-style: none;
+    
+}
+.navigation ul li
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+
+@media (max-width:550px)
+{
+    
+    .logo
+    {
+        position: relative;
+        left: 120px;
+    }
+   .navigation ul
+    {
+       
+        width: 100%;
+    }
+    
+    .navigation ul li 
+    {
+        display: block;
+        align-content: center;
+/*        background-color: gray;*/
+        margin-bottom: 2px;
+/*        width: 100%;*/
+        position: fixed;
+/*        left: -70px;*/
+        color: black;
+    }
+    .navigation a:hover
+    {
+        color: blue;
+    }
+}
